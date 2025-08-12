@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello javascipt</h1>
+    <button type="button" id="btn"> click me!</button>
+    <button type="button" id="btn2">원래색 되돌리기</button>
+    <script>
+        const h1 = document.getElementById('title');
+        const btn = document.getElementById('btn');
+        const btn2 = document.getElementById('btn2');
+
+        h1.style.color = 'tomato';
+        btn.addEventListener('click',() => {
+           h1.style.color = 'olive';
+            }
+        )
+        btn2.addEventListener('click',() => {
+           h1.style.color = 'tomato';
+            }
+         )
+    </script>
+</body>
+</html>
