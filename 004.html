@@ -5,18 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        ol li{
+            background-color: olive;
+            font-size: 30px;
+        }
+        ul li{
+            background-color: gold;
+            font-size: 12px;
+        }
+        h1 {
+            color: red; 
+            color: blue;
+            color: green; 
+        }
+        /*마지막에 선언한게 우선순위가 된다!*/
+    </style>
 </head>
 <body>
     <header>
         <h1>CODING CAMP</h1>
+        <!-- nav 태그는 웹사이트의 메인메뉴를 표시하는 시멘틱 티그이다. -->
+        <nav>
+            <ul> <!--Unordered List 순번이 없는 목록-->
+                <li><!-- Li는 List Item 이라는 뜻-->
+                    <a href="./002.html">about</a>
+                </li>
+                
+                <li>
+                    <a href="./003.html">product</a>
+                </li>
+                
+                <li>
+                    <a href="./002.html">contactus</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+
     <main>
         <h2>APPLE</h2>
         <p>MANGO</p>
+        <!--ol이나 ul의 타입을 바꿔야한다면 , html type 속성을 바꾸지 말고 css로 처리하도록 하는것이 웹표준이다-->
+        <ol start="10"> <!-- Ordered List 순번이 있는 목록-->
+            <li>
+                Odered List 1
+                <ul>
+                    <li><a href="#">Sub menu 1</a></li>
+                    <li><a href="#">Sub menu 2</a></li>
+                </ul>
+            </li>
+            <li>Odered List 2</li>
+            <li>Odered List 3</li>
+        </ol>
     </main>
     <footer>
         <p>&copy;copyrights</p>
     </footer>
+
 
 </body>
 </html>
