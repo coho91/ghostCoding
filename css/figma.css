@@ -31,3 +31,49 @@ p{
     letter-spacing: 0.5px;
 
 }
+
+/* figma login.html */
+.all-container{
+    width: 375px;
+    height: 812px;
+    border: 1px solid gold;
+
+    
+    
+}
+.slogan-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+
+}
+.slogan-container img{
+    width: 270px;
+}
+.slogan-container p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+.link-container{
+    
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+a{ 
+    width: 280px;
+    height: 42px;
+    border-radius: 8px;
+    
+}
+.btn1{
+    background-color: #1e1e1e;
+   
+}
+.btn2{
+    border: 1px solid black;
+}
