@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body{
+    background-color: #2c2c2c;
+    color:#fff;
+    font-family: sans-serif;
+     
+}
+div{
+    width: 375px;
+    height: 812px;
+    text-align: center;
+}
+
