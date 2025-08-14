@@ -1,1 +1,30 @@
 @charset "utf-8";
+
+body{
+    background-color: red;
+    width: 1920px;
+    min-width: 620px;
+    margin: 0 auto;
+}
+header{
+    background-color: blue;
+    width: 1209px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    background-image: url(../images/Netflix_logo.svg);
+    background-repeat: no-repeat;
+    background-size: 148px auto;
+    background-position: left ;
+}
+
+select{
+    width: 124px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: url(../images/netflix_lag_logo.svg) no-repeat left center;
+}
