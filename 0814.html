@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: #454d9f;
+            color: #c1c6ff;
+            background-image: url('./images/irangi_5.png');
+            background-size: 80% auto;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-attachment: fixed; */
+            /* background: #454d9f url('./images/irangi_5.png') no-repeat right bottom/80% auto fixed; */
+            /* background: transparent none repeat left top/auto scroll; background 
+            축약형의 기본값 축약형에서 사이즈를 지정할때 포지션이 있어야하고 그 앞에 / 를 붙인후 사이즈를 적어줘야한다! */
+            background-image: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(87, 199, 133, 1) 22%, rgba(44, 102, 68, 1) 76%, rgba(0, 0, 0, 1) 100%);
+        }
+        .thumb{
+            width: 240px;
+            height: 170px;
+            border-radius: 12px 12px 0 0; /*오른쪽상단, 왼쪽상단, 왼쪽하단, 오른쪽하단*/
+            outline: 2px solid red;
+            overflow: hidden;
+        }
+        .thumb img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /*이미지를 사이즈에 맞춰서 넣는다*/
+        }
+
+        .thumb-ir{
+            width: 240px;
+            height: 170px;
+            border-radius: 12px 12px 0 0; 
+            outline: 2px solid red;
+            margin-top: 20px;
+            background-image: url('./images/card_thumb_0.jpg');
+            background-size: 70px auto;
+            background-repeat: no-repeat;
+            background-position: right 20px center -5px;
+        }
+        .blind{
+            position: absolute;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+        }
+        section{
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            border:  1px solid rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;
+            margin: 0 auto;
+            background-image: url('./images/card_thumb_2.jpg');
+            background-size: 300px auto;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumb">
+        <img src="./images/card_thumb_0.jpg" alt="images">
+    </div>
+    <div class="thumb-ir">
+       <span class="blind">illust image</span>
+    </div>
+    
+    <section>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt similique magnam laudantium quaerat magni ut quas iure delectus velit iste aliquam corporis, officiis eligendi, optio porro voluptates, maiores omnis.
+
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi       reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi       reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi       reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid, neque nisi       reprehenderit architecto aut ducimus cupiditate amet temporibus obcaecati atque in nobis maiores? Sequi fugit eaque eius doloremque autem.
+            Praesentium delectus voluptates illo laborum ad doloribus, maiores explicabo autem iure ipsam. Aliquid modi labore atque nobis nisi maiores temporibus rem nesciunt adipisci ut, est cum magni vitae sunt officia.
+            Molestiae quae eum provident a repellat iure sequi, minima ratione! Unde, laborum quis inventore, ab id nisi quaerat maiores consequatur cumque tempora beatae enim sit quod, ad odio ipsum repellendus.
+            Porro inventore error tempore eius. In neque modi atque ipsum natus, repellat fugit quod, dolore, odit voluptates accusantium consectetur nam. Praesentium ipsam qui hic, totam ut iste voluptatum nihil quod.
+            Ut suscipit quibusdam excepturi! Mollitia cupiditate ipsam harum dolor laudantium exercitationem minima accusantium, unde ipsum nostrum inventore nisi quae cumque pariatur possimus illo, sed, perspiciatis rerum commodi ex. Corporis, rem?
+            </p>
+            
+    </section>
+ 
+</body>
+</html>
