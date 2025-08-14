@@ -2,25 +2,34 @@
 
 body{
     background-color: red;
-    width: 1920px;
+    max-width: 1920px;
     min-width: 620px;
-    margin: 0 auto;
 }
 header{
     background-color: blue;
-    width: 1209px;
+    width: 80%;
     height: 88px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+
+
 }
 .logo{
+    width: 148px;
+    height: 40px;
     background-image: url(../images/Netflix_logo.svg);
     background-repeat: no-repeat;
-    background-size: 148px auto;
-    background-position: left ;
+    background-size: cover;
+    background-position: left center;
+    margin: 22px 0 0 16px;
 }
 
-select{
+.lag{
+        margin: 22px 0 0 16px;
+}
+
+.lag select{
     width: 124px;
     height: 32px;
     border-radius: 4px;
