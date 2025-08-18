@@ -20,3 +20,26 @@
             margin: -1px;
             overflow: hidden;
         }
+
+        select,
+        button{
+            border: none;
+            background-color: transparent;
+            color: inherit;
+        }
+        button{
+            cursor: pointer;
+        }
+        img{
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4.
+        h5,
+        h6 {
+            font-size:  inherit;
+            font-weight: inherit;
+        }

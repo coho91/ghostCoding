@@ -1,39 +1,103 @@
 @charset "utf-8";
 
 body{
-    background-color: red;
-    max-width: 1920px;
-    min-width: 620px;
+    background: #000 url(../images/netflix_bg2.jpg) no-repeat center top/100%
+                auto;
+    color: #fff;
+    font-family: sans-serif;
 }
 header{
-    background-color: blue;
-    width: 80%;
-    height: 88px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+     background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(46, 22, 28, 0) 100%);
+    
+}
 
-
+header .inner{
+     width: 100%;
+     max-width: 1290px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     height: 88px;
+     align-items: center;
+     padding: 0 1.25rem;
 }
 .logo{
     width: 148px;
     height: 40px;
     background-image: url(../images/Netflix_logo.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: left center;
-    margin: 22px 0 0 16px;
+    
 }
 
-.lag{
-    margin: 22px 0 0 16px;
+.nav{
+  display: flex;
+  gap: 12px;
 }
 
-.lag select{
-    width: 124px;
+.nav select,
+.nav button{
+    min-width: 124px;
     height: 32px;
-    border-radius: 4px;
-    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 36px;
     color: #fff;
-    background: url(../images/netflix_lag_logo.svg) no-repeat left center;
+}
+
+.nav select{
+    border: 1px solid #fff;
+    padding-left: 30px;
+    background: url(../images/netflix_lag_logo.svg) no-repeat 12px center/20px auto;
+}
+.nav button{
+    background-color: #d81e27;
+
+}
+.onbording{
+    width: 100%;
+    max-width: 600px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+.onbording h2{
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.25;
+}
+.onbording p{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.input_container{
+    height: 56px;
+    display: flex;
+    gap: 8px;
+    margin-top: 1rem;
+}
+.input_container input,
+.input_container button{
+    border-radius: 8px;
+    padding: 0 1.25rem;
+}
+.input_container input{
+    flex-grow: 1;
+}
+.input_container button{
+    background-color: #d81e27;
+    font-size: 1.25rem;
+    color: #fff;;
+}
+form h3{
+    font-size: 1rem;
 }

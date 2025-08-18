@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root {
+            --primary: #d81e27;
+            --title: 56px;
+        } 
+        html{
+            font-size: 16px;
+        }
+
+        /* 변수설정 --ㅇㅇㅇ, 띄어쓰기가 있으면 안된다 */
         body{
             /* background-color: #454d9f;
             color: #c1c6ff;
@@ -17,6 +26,8 @@
             /* background: transparent none repeat left top/auto scroll; background 
             축약형의 기본값 축약형에서 사이즈를 지정할때 포지션이 있어야하고 그 앞에 / 를 붙인후 사이즈를 적어줘야한다! */
             background-image: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(87, 199, 133, 1) 22%, rgba(44, 102, 68, 1) 76%, rgba(0, 0, 0, 1) 100%);
+
+            font-size: 12px;
         }
         .thumb{
             width: 240px;
@@ -62,15 +73,33 @@
             background-repeat: no-repeat;
             background-position: right bottom;
         }
+        .title{
+            color:var(--primary);
+            font-size: var(--title);
+        }
+        em{
+            font-size: 1rem;
+            /* 루트(전체)를 기준으로 */
+        }
+        i{
+            font-size: 1em;
+            /* 부모를 기준으로 */
+        }
     </style>
 </head>
 <body>
+
+    <em>Hello, world</em>
+    <i>Hello, world</i>
+    <hr>
+
     <div class="thumb">
         <img src="./images/card_thumb_0.jpg" alt="images">
     </div>
     <div class="thumb-ir">
        <span class="blind">illust image</span>
     </div>
+    <h1 class="title">Heading</h1>
     
     <section>
 
