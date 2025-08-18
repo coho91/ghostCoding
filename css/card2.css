@@ -12,12 +12,15 @@ body{
   
 }
 .card-container .thumb{
-    width: 100%;
     height: 170px;
     overflow: hidden;
+    border-radius: 20px 20px 0 0;
+
+}
+.card-container .thumb img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-
-
 }
 .card-container .contents{
     background-color: #fff;
@@ -35,19 +38,28 @@ body{
     margin: 15px 0;
 }
 
-.tag-container{
+.card-container .tag-container{
     display: flex;
     gap:5px;
     flex-wrap: wrap;
     font-size: 12px;
     
 }
-.tag-container li{
+
+.card-container .tag-container a{
+    display: flex;
     height: 24px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    padding: 0 10px;
+    padding: 0 12px;
+    align-items: center;
 }
-.tag-container li:hover{
+.card-container .tag-container a::before{
+    content: "#";
+    margin: 0 4px 0 0;
+}
+
+.card-container .tag-container a:hover{
     background-color: rgba(0, 0, 0, 0.4);
+   
 }

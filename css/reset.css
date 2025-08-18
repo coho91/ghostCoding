@@ -48,3 +48,11 @@
         ol{
             list-style: none;
         }
+        table{
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid #767676;
+            padding: 12px;
+        }
