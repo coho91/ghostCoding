@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .tBox{
+            max-width: 800px;
+            width: 100%;
+            margin: 50px auto;
+            border-top: 3px solid #000;
+            border-bottom: 2px solid #565656;
+        }
+        .tBox th,
+        .tBox td{
+            border-width: 0 1px 1px 0;
+        }
+        td:empty{
+            height: 1em;
+        }
+        td:empty::before{
+            content:"-"
+        }
+    </style>
+</head>
+<body>
+    <table class="tBox">
+        <caption>기본정보</caption>
+        <colgroup>
+            <col style="width: 120px;">
+            <col style="width: 100px;">
+            <col>
+            <col style="width: 100px;">
+            <col>
+        
+        </colgroup>
+        <tr>
+            <td rowspan="4">사진</td>
+            <th scope="row">이름</th>
+            <td>Hong gil dong</td>
+            <td>생년월일</td>
+            <td>1990.01.01</td>
+        </tr>
+        <tr>
+            <th scope="row">전화</th>
+            <td>010-1234-5678</td>
+            <td>이메일</td>
+            <td>hong@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">주소</th>
+            <td colspan="3">Seoul, Korea</td>
+        </tr>
+        <tr>
+            <th scope="row">GitHub</th>
+            <td>http://github.com/ghost.resume.app/ddddddddd</td>
+            <td>portfolio</td>
+            <td>http://hongdev.dev</td>
+        </tr>
+    </table>
+</body>
+</html>

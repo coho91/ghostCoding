@@ -49,10 +49,13 @@
             list-style: none;
         }
         table{
-            border-spacing: 0px;
+            border-spacing: 0;
             border-collapse: collapse;
+            table-layout: fixed;
+            overflow-wrap: break-word;
         }
-        td{
-            border: 1px solid #767676;
-            padding: 12px;
+        td,
+        th{
+       
+ 
         }
