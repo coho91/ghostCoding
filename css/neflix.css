@@ -101,3 +101,28 @@ header .inner{
 form h3{
     font-size: 1rem;
 }
+
+.link_box{
+
+    max-width: 1290px;
+    width: 70%;
+    height: 100px;
+    background: #471757;
+    background: linear-gradient(90deg,rgba(71, 23, 87, 1) 0%, rgba(39, 8, 92, 1) 100%);
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 16px 0 0 16px;
+    position: relative;
+
+}
+.link_box text p{
+    font-size: 20px
+}
+.link_box a{
+    width: ;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+
+    
+}
