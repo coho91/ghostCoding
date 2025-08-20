@@ -127,9 +127,7 @@ form h3{
      font-size: 1.25rem;
 }
 .link_box a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0.5rem 1.5rem;
