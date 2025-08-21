@@ -12,7 +12,8 @@
             text-decoration: none;
         }
 
-        .blind{
+        .blind,
+        legend{
             position: absolute;
             clip: rect(0 0 0 0);
             width: 1px;
@@ -28,6 +29,11 @@
             background-color: transparent;
             color: inherit;
         }
+
+        fieldset{
+            border: none;
+        }
+
         button{
             cursor: pointer;
         }
