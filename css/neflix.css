@@ -154,20 +154,39 @@ form h3{
 
 .all_contents{    
     margin-top: 80px;
-    position: relative;
 }
 
 .all_contents h5{
     font-size: 2rem;
     margin-bottom: 30px;
 }
+.lank_contents{
+
+    display: flex;
+    gap: 20px;
+
+    
+    
+}
 .lank_contents .lank{
     width: 214px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 8px;
+    position: relative;
+    transition: 0.4s;
 }
 
+.lank_contents .lank a {
+    height: 300px;
+    display:block;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: 0.4s;
+    
+}
+
+.lank_contents .lank:hover {
+    scale: 1.1;
+
+}
 
 .lank_contents .lank img{
     object-fit: cover;
@@ -180,29 +199,32 @@ form h3{
     color: #000;
     font-weight: 800;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-  color: black;
+    color: black;
     position: absolute;
     left: -20px;
     bottom: 0px;
     z-index: 1;
 }
 
-.lank_contents .lank{
-    transition: 0.4s;
 
-}
-.lank_contents .lank:hover{
-    scale: 1.1;
 
-}
 .reason_contents{
-    width: calc((100% - 36px)/4);
-    height: 339px;
-    background: #471757;
-    background: linear-gradient(90deg,rgba(71, 23, 87, 1) 0%, rgba(39, 8, 92, 1) 100%);
-    border-radius: 16px;
-    padding: 25px;
+    display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
 }
+
+.reason_contents li{
+    width: calc((100% - 36px) / 4);
+    height: 200px;
+    border-radius: 12px;
+    padding: 15px;
+    outline: 1px solid #fff;
+    background: url("../images/icons/sns_facebook.png") no-repeat right 10px
+    bottom 15px/40px auto;
+}
+
 .reason_contents strong{
     font-size: 1.25rem;
 }
@@ -211,11 +233,54 @@ form h3{
     color: #a3a3a3;
     margin-top: 20px;
     line-height: 1.5;
+
 }
-.reason_contents li{
-    height: 100%;
-    background-image: url(../images/ghost_n1.png);
+
+details[open] {
+
+}
+
+details[open] summary{
+
+}
+
+.list li{
+    margin-top: 10px;
+}
+.list summary{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    background-image: url('../images/icons/plus-solid-full-wt.svg');
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 60px;
+    background-size: 24px;
+    background-position: right 20px center;
+}
+.list summary::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    background: url('../images/icons/plus-solid-full-wt.svg') no-repeat center center/contain;
+    top: 50%; 
+    translate: 0 -50%;
+    width: 24px;
+    height: 24px;
+    transition: 0.4s;
+}
+
+.list details[open] summary{
+    border-radius: 12px 12px 0 0;
+}
+
+.list details[open] summary::after{
+    rotate: -45deg;
+}
+
+details{
+
+}
+.list li p{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    padding: 20px;
 }

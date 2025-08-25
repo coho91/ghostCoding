@@ -44,14 +44,15 @@
         h1,
         h2,
         h3,
-        h4.
+        h4,
         h5,
         h6 {
             font-size:  inherit;
             font-weight: inherit;
         }
         ul,
-        ol{
+        ol,
+        summary{
             list-style: none;
         }
         table{
