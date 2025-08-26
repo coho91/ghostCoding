@@ -251,10 +251,10 @@ details[open] summary{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 20px;
-    background-image: url('../images/icons/plus-solid-full-wt.svg');
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: right 20px center;
+    position: relative;
 }
 .list summary::after{
     content: "";

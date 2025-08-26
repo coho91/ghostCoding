@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+
+        .container{
+            background-color: gold;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            margin: 0 auto;
+
+            /* position: static, 기본(offset 속성 적용불가)
+
+            offset속성: left, top, right, bottom
+
+               position: relative,
+               무조건 나를 기준으로
+               position: absolute
+               *부모나 조상중에 position이 static이 아닌 가장 가까운 기준으로 함
+               position: fixed
+               foating butten: z축으로 떠있는 요소 무조건 body를 기준으로하고 스크롤이 되지 않음
+                */
+            
+        }
+        .ghost1{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .ghost2{
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+        }
+        p{
+            background-color: tomato;
+            top: 50px;
+            /* 포지션이 static이기 때문에 top이 먹지 않는다 */
+        }
+        .child-container{
+            width: 200px;
+            height: 200px;
+            background: url(./images/irangi_2.png) no-repeat;
+            position: relative;
+        }
+
+        .container button{
+            width: 50px;
+            height: 50px;
+            background-color: tomato;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #fff;
+            position: absolute;
+            top:50%;
+         
+        }
+        .prev{
+     
+            left: 0;
+            translate: -50% -50%;
+   
+        }
+        .next{
+           right: 0;
+           translate: 50% -50%;
+         
+               }
+
+        .ghost3{
+            tr
+        }
+
+        .child-container:hover .full{
+            background-color: rgba(54, 148, 24, 0.5);
+        }
+        .full{
+            background-color: rgba(54, 148, 24, 0);
+            position: absolute;
+            left:0;
+            right:0;
+            top: 0;
+            bottom:0;
+            transition: 0.4s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-container">
+             <img src="./images/ghost_n1.png" alt="" class="ghost1">
+          <img src="./images/ghost_n2.png" alt="" class="ghost2">
+
+          <div class="full">HELLO</div>
+        </div>
+
+        <button type="button" class="prev">이전</button>
+        <button type="button" class="next">다음</button>
+        
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quas fugit vel voluptas iste magnam vitae quisquam similique minima. Corporis quod voluptatem temporibus porro facere repellat accusantium atque laboriosam unde.
+    </p>
+
+</body>
+</html>
