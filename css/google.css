@@ -4,7 +4,6 @@ html,
 body{
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 body{
     background-image: url(../images/google_bg.jpg);
@@ -19,7 +18,6 @@ body{
 
 nav .nav_container{
     margin: 30px 30px 0 0;
-    outline: 1px solid red;
     display: flex;
     justify-content: flex-end;
     gap: 16px;
@@ -31,11 +29,16 @@ nav .nav_container li{
     justify-content: center;
 }
 .nav_container li img{
-    width: 36px;
-    width: 36px;
+    width: 32px;
+    width: 32px;
+}
+
+.main-container{
+
+    margin: 0 auto;
 }
 .main-container h1{
-    outline: 1px solid red;
+
     width: 300px;
     height: 200px;
     background-image: url('../images/google_logo.svg');
@@ -45,11 +48,137 @@ nav .nav_container li{
     margin: 0 auto;
 
 }
-.main-container .search-container{
-    background-color: #fff;
-    width: 70%;
-    height: 56px;
-    border-radius: 30px;
+.main-container .search_bar{
+    width: 60%;
+    position: relative;
     margin: 0 auto;
+}
+.main-container .search_bar form{
+    display: flex;
+    justify-content: center;
+}
 
+.main-container .search_bar input{
+
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../images/icons/search.svg);
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: left 20px center;
+    height: 62px;
+    border-radius: 40px;
+    padding:0 120px 0 80px;
+    font-size: 1rem;
+    color: black;
+
+}
+
+.btn_container{
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    
+}
+.btn_container .btn_voice{
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/icons/google/mic.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn_container .btn_img{
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/icons/google/camera.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.main-container .search_bar input::placeholder{
+    font-size: 1rem;
+    color: #b9b9b9;
+}
+
+.main-container .search_bar input:focus{
+    outline: none;
+}
+
+/* 자주보는 사이트 */
+
+.icon-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px auto;
+
+
+}
+
+.icon-container .link_icon{
+  width: 120px;
+  position: relative;
+
+}
+
+
+
+.link_icon a{
+
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 4px;
+    text-shadow: 0 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.icon-container .link_icon:hover a{
+    background-color: rgba(255, 255, 255, 0.3);
+    }
+.icon-container .link_icon:hover .btn_option{
+    display: block;
+}
+.link_icon a .favicon{
+    width: 48px;
+    height: 48px;
+    border-radius: 40px;
+    background-color:#e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.link_icon a p{
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.link_icon a img{
+    width: 24px;
+    height: 24px;
+}
+.link_icon .btn_option{
+    width: 24px;
+    height: 24px;
+    background: rgba(255,255,255,0.0) url('../images/icons/google/meatball_wt.svg') no-repeat center center/20px auto;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    display: none;
+}
+.link_icon .btn_option:hover{
+    background-color: rgba(255,255,255,0.3);
+      display: block;
 }
